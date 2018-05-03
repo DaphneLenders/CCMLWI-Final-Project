@@ -3,7 +3,7 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.feature_selection import VarianceThreshold
 from imblearn.over_sampling import SMOTE
-from Classify_utils import eight_labels, four_labels, evaluate, average_scores, makeOverview
+from Classify_utils import evaluate, average_scores, read_csv, create_folds
 from InverseDocumentFrequentizer import idf_vectorizer, generate_stemmed_bigrams, generate_bigrams, generate_trigrams, generate_character_trigrams, generate_functionword_trigrams
 import Classifier_adaBoost
 import Classifier_randomForest
@@ -14,7 +14,9 @@ import Classifier_logisticRegression
 import Classifier_ecoc_svm
 
 
-def classify(folds, number_of_classes, classifier):
+
+
+def classify(folds, classifier):
     scores = []
     for (train_data, train_labels, validation_data, validation_labels) in folds:
 
@@ -40,11 +42,9 @@ def classify(folds, number_of_classes, classifier):
         validation_prediction = classifier.fit_and_predict(feature_matrix_train, train_labels, feature_matrix_validation)
 
 
-        if number_of_classes == 4:
-            print(confusion_matrix(validation_labels, validation_prediction, labels=['SAMEN-BOVEN', 'SAMEN-ONDER', 'TEGEN-ONDER', 'TEGEN-BOVEN']))
 
-        elif number_of_classes == 8:
-            print(confusion_matrix(validation_labels, validation_prediction, labels=['LEIDEND', 'HELPEND', 'MEEWERKEND', 'VOLGEND', 'TERUGGETROKKEN', 'OPSTANDIG', 'AANVALLEND', 'COMPETITIEF']))
+        print(confusion_matrix(validation_labels, validation_prediction, labels=['MWS', 'HPL', 'EAP']))
+
 
 
         score = evaluate(validation_labels, validation_prediction)
@@ -53,19 +53,18 @@ def classify(folds, number_of_classes, classifier):
     average_scores(scores)
     return average_scores
 
-def compare_performances():
-    folds = eight_labels()
-    for clf, label in zip([Classifier_randomForest, Classifier_adaBoost, Classifier_logisticRegression, Classifier_Bayes, Classifier_SVM, Classifier_majority],
-                          ['Random Forest', 'Ada boost', 'Logistic Regression', 'Naive Bayes', 'Support Vector Machine',
-                           'Majority vote']):
+def compare_performances(folds):
+    for clf, label in zip([Classifier_SVM],
+                          ['Support Vector Machine']):
         print(label)
-        classify(folds, 8, clf)
+        classify(folds, clf)
         print("******************")
 
 
 def main():
-    folds = eight_labels()
-    classify(folds, 8, Classifier_ecoc_svm)
+    data = read_csv()
+    folds = create_folds(data.text, data.author)
+    classify(folds, Classifier_ecoc_svm)
 
 
 
