@@ -13,7 +13,11 @@ def read_data():
     return data
 
 
+def read_csv():
+    data = pd.read_csv('train.csv')
+    return data
 
+'''
 def eight_labels():
     data = read_data()
     folds = create_folds(data.text, data.label)
@@ -29,6 +33,7 @@ def four_labels():
     folds = create_folds(data.text, data.label)
     return folds
 
+'''
 
 def create_folds(train_data, labels):
     splitted_indeces = cross_validation.KFold(len(labels), n_folds=10, shuffle=True, random_state=1)
@@ -93,7 +98,7 @@ def writeInExcelSheet(rightPredictions, wrongPredictions):
         wrongs.write(row, col + 1, true_label)
         wrongs.write(row, col + 2, prediction)
         col = 0
-        row +=1
+        row += 1
 
     workbook.close()
 
