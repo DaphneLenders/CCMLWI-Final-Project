@@ -6,34 +6,9 @@ from sklearn.metrics import confusion_matrix, recall_score, precision_score
 import xlsxwriter
 
 
-def read_data():
-    data = pd.read_excel('translated_texts.xlsx')
-    data_without_neutrals = data[data.label != 'NEUTRAAL']
-    data = data_without_neutrals.reset_index()
-    return data
-
-
 def read_csv():
     data = pd.read_csv('train.csv')
     return data
-
-'''
-def eight_labels():
-    data = read_data()
-    folds = create_folds(data.text, data.label)
-    return folds
-
-
-def four_labels():
-    data = read_data()
-    data.label = ['SAMEN-BOVEN' if (x=='LEIDEND' or x== 'HELPEND') else x for x in data.label ]
-    data.label = ['SAMEN-ONDER' if (x=='MEEWERKEND' or x == 'VOLGEND') else x for x in data.label]
-    data.label = ['TEGEN-ONDER' if (x=='TERUGGETROKKEN' or x == 'OPSTANDIG') else x for x in data.label]
-    data.label = ['TEGEN-BOVEN' if (x=='AANVALLEND'or x == 'COMPETITIEF') else x for x in data.label]
-    folds = create_folds(data.text, data.label)
-    return folds
-
-'''
 
 def create_folds(train_data, labels):
     splitted_indeces = cross_validation.KFold(len(labels), n_folds=10, shuffle=True, random_state=1)

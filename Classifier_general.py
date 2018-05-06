@@ -23,7 +23,7 @@ def classify(folds, classifier):
         idf_vectorizer(train_data)
         generate_stemmed_bigrams(train_data)
         print(generate_functionword_trigrams(train_data))
-        #print(calc_document_frequencies_stemmed_words(train_data))
+
 
         # Features are extracted
         feature_matrix_train = list(map(extract_features, train_data))
