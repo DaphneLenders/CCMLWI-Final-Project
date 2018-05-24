@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a267fd51-7b4a-4299-9888-63cc254d61a8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AppLab Classifier/.idea/ClassifierDaphne.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AppLab Classifier/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AppLab Classifier/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AppLab Classifier/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - Letters written during a short residence in Sweden, Norway, and Denmark.txt" afterPath="$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - Letters written during a short residence in Sweden, Norway, and Denmark.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Preprocess_Influence_Data.py" afterPath="$PROJECT_DIR$/Preprocess_Influence_Data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calc_Similarity.py" afterPath="$PROJECT_DIR$/Calc_Similarity.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,8 +72,8 @@
       <file leaf-file-name="Calc_Similarity.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="1311">
+              <caret line="79" column="66" lean-forward="false" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -719,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="1311">
+          <caret line="79" column="66" lean-forward="false" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
