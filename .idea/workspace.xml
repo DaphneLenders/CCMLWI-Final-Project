@@ -2,6 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a267fd51-7b4a-4299-9888-63cc254d61a8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/John Keats/Keats2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/John Keats/Keats3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/John Keats/Keats4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Lord Byron/Byron1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Lord Byron/Byron2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Lord Byron/Byron4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Lord Byron/Byron5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Samuel Taylor Coleridge/Coleridge7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Edgar Allan Poe Influencers Data/Thomas de Quincey/De Quincy8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/John Milton/[pp] John Milton Areopagiticia.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/John Milton/[pp] John Milton Paradise Lost.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/John Milton/[pp] John Milton Paradise Regained.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - A Vindication of the Rights of Woman.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - Letters written during a short residence in Sweden, Norway, and Denmark.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - Maria The Wrongs of Woman.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/William Godwin/[pp] William Godwin - Damon and Delia A Tale.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/William Godwin/[pp] William Godwin - Four Early Pamphlets.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/William Godwin/[pp] William Godwin - Imogen A Pastoral Romance.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mary Shelley Influencers Data/William Godwin/[pp] William Godwin - Things As They Are.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calc_Similarity.py" afterPath="$PROJECT_DIR$/Calc_Similarity.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,20 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Classifier_randomForest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classifier_randomForest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Classify_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classify_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="0">
               <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -48,32 +69,8 @@
       <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExtractFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
+            <state relative-caret-position="511">
               <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Preprocess_Influence_Data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Preprocess_Influence_Data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calc_Similarity.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="79" column="66" lean-forward="false" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -91,32 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classifier_SVM.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classifier_SVM.py">
+      <file leaf-file-name="Calc_Similarity.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="[pp] Mary Wollstonecraft - A Vindication of the Rights of Woman.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - A Vindication of the Rights of Woman.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="[pp] Mary Wollstonecraft - Letters written during a short residence in Sweden, Norway, and Denmark.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mary Shelley Influencers Data/Mary Wollstonecraft/[pp] Mary Wollstonecraft - Letters written during a short residence in Sweden, Norway, and Denmark.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="82">
+              <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,17 +170,6 @@
               <item name="CCMLWI Final" type="b2602c69:ProjectViewProjectNode" />
               <item name="CCMLWI Final" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CCMLWI Final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CCMLWI Final" type="462c0819:PsiDirectoryNode" />
-              <item name="Mary Shelley Influencers Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CCMLWI Final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CCMLWI Final" type="462c0819:PsiDirectoryNode" />
-              <item name="Mary Shelley Influencers Data" type="462c0819:PsiDirectoryNode" />
-              <item name="John Milton" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -210,7 +178,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AppLab Code/Applab-Rose-of-Leary/classifier" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,16 +274,16 @@
     <frame x="0" y="0" width="1363" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.285495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29470453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4681208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4681208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116653875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -334,16 +302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classifier_randomForest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -625,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classifier_general.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classifier_randomForest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -665,29 +616,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Preprocess_Influence_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExtractFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classify_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="0">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -711,10 +642,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classifier_general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Preprocess_Influence_Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExtractFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python 3.6.5/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="2526" column="0" lean-forward="false" selection-start-line="2526" selection-start-column="0" selection-end-line="2526" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Calc_Similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="79" column="66" lean-forward="false" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
+        <state relative-caret-position="82">
+          <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
