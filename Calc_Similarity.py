@@ -4,6 +4,8 @@ import nltk
 import numpy as np
 from scipy.stats import entropy
 from math import exp
+from nltk import pos_tag
+
 
 # This function opens a file with a given path_name and puts the text of the file in
 # a string. Only the text up until the line 'End of the Project Gutenberg EBook' is
@@ -63,30 +65,52 @@ def read_influencer_directory(root_dir):
     dataframe = pd.DataFrame(list, columns=['Text', 'Author'])
     return dataframe
 
-
-
+# Given a dataframe that is grouped by authors, the number of times an author uses certain function
+# words (as stored in the list 'function_words') is calculated and stored in a dataframe
 def calc_function_word_frequencies(groups):
     dataframe = pd.DataFrame({'function word': function_words['Word']})
 
     for (author, df) in groups:
         function_word_frequencies_total = np.zeros(len(function_words['Word']))
         for text in df['Text']:
+            # split the text into tokens
             word_tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
             words_only = word_tokenizer.tokenize(text.lower())
+            # count how many times the text contains the given function words
             function_word_frequencies = np.array([words_only.count(function_word) for function_word in function_words['Word']])
+            # add the number of counted function words to the total number of function words for that author
             function_word_frequencies_total += function_word_frequencies
-
+        # add 1 to each function_word_frequency to avoid zeros-values
         dataframe[author] = function_word_frequencies_total.astype(int) +1 
+    return dataframe
+
+
+def calc_pos_tag_frequencies(groups):
+    dataframe = pd.DataFrame({'POS tag': possibleTags})
+
+    for (author, df) in groups:
+        pos_tag_frequencies_total = np.zeros(len(possibleTags))
+        for text in df['Text']:
+            # split the text into tokens
+            word_tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+            words_only = word_tokenizer.tokenize(text.lower())
+            tagged_words = pos_tag(words_only)
+            # count the tag frequencies for the given text
+            pos_tag_frequencies = np.array([tagged_words[1].count(tag) for tag in possibleTags])
+            # add the tag frequencies for the given text to the total tag frequencies
+            pos_tag_frequencies_total += pos_tag_frequencies
+        #store tag frequencies in a dataframe and add 1 to every instance (to avoid zero values)
+        dataframe[author] = pos_tag_frequencies_total.astype(int) + 1
     return dataframe
 
 # Helper function for the Kullback Leibner Divergence computation: All frequencies have to be normalized (such that
 # they sum up to 1) in order to calculate the divergence
-def normalize_function_word_frequencies(dataframe):
-    for column in dataframe.columns[1:]:
-        sum_column = sum(dataframe[column])
-        normalized_values = [value/sum_column for value in dataframe[column]]
-        dataframe[column] = normalized_values
-    return dataframe
+def normalize_frequencies(to_be_normalized):
+    for column in to_be_normalized.columns[1:]:
+        sum_column = sum(to_be_normalized[column])
+        normalized_values = [value / sum_column for value in to_be_normalized[column]]
+        to_be_normalized[column] = normalized_values
+    return to_be_normalized
 
 # Given two vectors of normalized feature-vectors, this function calculates the kullback
 # leibner divergence between two authors based on those feature-vectors
@@ -119,7 +143,7 @@ def create_similarity_table(author_function_words, influencers_function_words):
     return similarity_dataframe
 
 
-################# Loading list of funciton words #################
+################# Loading list of function words #################
 print('Start loading data...')
 path = 'Function Words.xlsx'
 # function words are extracted from excel file
@@ -137,12 +161,14 @@ influencer_directory = './Influencer Texts/'
 # Next, read in all influencer data and create one big pd dataframe to store it:
 influencer_texts = create_influencer_dataframe(influencer_directory, influencer_dict)
 
+
+'''
 ################## Normalized function word frequencies are calculated ##################
 print("Calculating normalized function word frequencies kaggle authors")
-normalized_frequencies_kaggle_authors = normalize_function_word_frequencies(calc_function_word_frequencies(kaggle_authors.groupby('Author')))
+normalized_frequencies_kaggle_authors = normalize_frequencies(calc_function_word_frequencies(kaggle_authors.groupby('Author')))
 
 print("Calculating normalized function word frequencies for influencers")
-normalized_frequencies_influencers = normalize_function_word_frequencies(calc_function_word_frequencies(influencer_texts.groupby('Author')))
+normalized_frequencies_influencers = normalize_frequencies(calc_function_word_frequencies(influencer_texts.groupby('Author')))
 
 ################## Calculate similarities between every kaggle author and every influencer ##################
 print("Similarity table based on function words is created")
@@ -150,5 +176,25 @@ similarity_table = create_similarity_table(normalized_frequencies_kaggle_authors
 
 ################## Similarity Table is stored into an Excel file ##################
 writer = pd.ExcelWriter('similarities.xlsx')
+similarity_table.to_excel(writer,'Sheet1')
+writer.save()
+'''
+
+################## Normalized POS-tag frequencies are calculated ##################
+possibleTags = ['CC', 'CD', 'DT', 'EX', 'FW', 'IN', 'JJ', 'JJR', 'JJS', 'MD', 'NN', 'NNS', 'NNP', 'NNPS', 'PDT', 'POS', 'RB',
+                'RBR', 'RBS', 'RP', 'TO', 'UH', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ', 'WDT', 'WP', 'WP$', 'WRB']
+
+print("Calculate normalized pos-tag frequencies for kaggle authors")
+normalized_pos_tag_frequencies_kaggle = normalize_frequencies(calc_pos_tag_frequencies(kaggle_authors.groupby('Author')))
+
+print("Calculate normalized pos-tag frequencies for influencer authors")
+normalized_pos_tag_frequencies_influencer = normalize_frequencies(calc_pos_tag_frequencies(influencer_texts.groupby('Author')))
+
+################## Calculate similarities between every kaggle author and every influencer ##################
+print("Similarity table based on pos-tag frequencies is created")
+similarity_table = create_similarity_table(normalized_pos_tag_frequencies_kaggle, normalized_pos_tag_frequencies_influencer)
+
+################## Similarity Table is stored into an Excel file ##################
+writer = pd.ExcelWriter('similarities_pos.xlsx')
 similarity_table.to_excel(writer,'Sheet1')
 writer.save()

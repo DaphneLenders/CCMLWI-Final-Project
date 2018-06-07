@@ -5,10 +5,8 @@ import numpy as np
 from nltk import wordpunct_tokenize, pos_tag
 from textblob import TextBlob
 from nltk.corpus import stopwords
-from collections import defaultdict
 import statistics
 from nltk.stem.snowball import SnowballStemmer
-import InverseDocumentFrequentizer
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -34,40 +32,6 @@ def calcNumberOfRepetitions(tokens, text, queriedRepetition):
             tokensAlreadyChecked.append(token)
     return numberOfQueriedRepetitions
 
-
-def make_bigrams(words):
-    length = len(words)
-    bigrams = []
-    for i in range(length - 1):
-        if not (words[i].isdigit() or words[i+1].isdigit()):
-            bigrams.append((words[i], words[i + 1]))
-    return bigrams
-
-def make_stemmed_bigrams(words):
-    length = len(words)
-    bigrams = []
-    for i in range(length - 1):
-        if not (words[i].isdigit() or words[i+1].isdigit()):
-            bigrams.append((words[i], words[i + 1]))
-    return bigrams
-
-def make_trigrams(words):
-    length = len(words)
-    trigrams = []
-    for i in range(length - 2):
-        if not (words[i].isdigit() or words[i + 1].isdigit() or words[i+2].isdigit()):
-            trigrams.append((words[i], words[i + 1], words[i+2]))
-    return trigrams
-
-
-# Given all n-grams in a song, and some queried n-gram this function calculates how often the queried n-gram occurs
-# in the code
-def calc_ngram_occurence(ngrams, queriedNgram):
-    numberOfngramOccurences = 0
-    for ngram in ngrams:
-        if ngram==queriedNgram:
-            numberOfngramOccurences += 1
-    return numberOfngramOccurences
 
 
 def extract_features(text):
@@ -147,24 +111,8 @@ def extract_features(text):
         count = text.count(special_character)
         features.append(count)
 
-    '''   We will probably use fasttext for this
-    # word frequencies
-    IDF = InverseDocumentFrequentizer.getIDF()
-    for key, value in IDF.items():
-        #tf_idf = text.count(key) * value
-        features.append(text.count(key))
-    
-    bigrams = make_bigrams(stemmed_words)
-    all_bigrams = InverseDocumentFrequentizer.getBigrams()
-    for key, value in all_bigrams.items():
-        number_of_bigram_occurences = calc_ngram_occurence(bigrams, key)
-        features.append(number_of_bigram_occurences)
 
-    trigrams = make_trigrams(words_only)
-    all_trigrams = InverseDocumentFrequentizer.getFunctionWordTrigrams()
-    for key, value in all_trigrams.items():
-        number_of_trigram_occurences = calc_ngram_occurence(trigrams, key)
-        features.append(number_of_trigram_occurences)
-    '''
+    #TODO ####### INCLUDE FASTTEXT #######
+
     return features
 
