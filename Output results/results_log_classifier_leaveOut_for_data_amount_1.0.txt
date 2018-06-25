@@ -1,0 +1,51 @@
+   Now, the amount of text samples for the author EAP is:  4800
+   Now, the amount of text samples for the author HPL is:  4800
+   Now, the amount of text samples for the author MWS is:  4800
+      Currently leaving out: lexicaldiversity
+   Classifier performance on test data set:
+[[799 187 188]
+ [151 869 187]
+ [236 218 765]]
+   Recall: 0.676037
+   Precision: 0.675616
+   F1-score: 0.675826
+      Currently leaving out: specialchars
+   Classifier performance on test data set:
+[[795 196 183]
+ [170 814 223]
+ [262 236 721]]
+   Recall: 0.647680
+   Precision: 0.646988
+   F1-score: 0.647334
+      Currently leaving out: bi- and trigrams
+   Classifier performance on test data set:
+[[800 190 184]
+ [148 870 189]
+ [249 220 750]]
+   Recall: 0.672495
+   Precision: 0.671960
+   F1-score: 0.672227
+      Currently leaving out: postags
+   Classifier performance on test data set:
+[[802 177 195]
+ [150 857 200]
+ [254 203 762]]
+   Recall: 0.672754
+   Precision: 0.672138
+   F1-score: 0.672446
+      Currently leaving out: fasttext
+   Classifier performance on test data set:
+[[641 267 266]
+ [181 825 201]
+ [270 248 701]]
+   Recall: 0.601524
+   Precision: 0.600946
+   F1-score: 0.601235
+      Currently leaving out: sentiments
+   Classifier performance on test data set:
+[[798 184 192]
+ [151 851 205]
+ [250 204 765]]
+   Recall: 0.670782
+   Precision: 0.670249
+   F1-score: 0.670515

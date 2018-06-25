@@ -1,0 +1,105 @@
+   Now, the amount of text samples for the author EAP is:  6000
+   Now, the amount of text samples for the author HPL is:  6000
+   Now, the amount of text samples for the author MWS is:  6000
+      Currently leaving out: None
+      Fold 1
+      Elapsed time: 44.23872756958008
+      Classifier: 
+[[410  82 108]
+ [ 89 413  98]
+ [128 122 350]]
+   Recall: 0.651667
+   Precision: 0.650924
+   F1-score: 0.651295
+      Fold 2
+      Elapsed time: 41.79741716384888
+      Classifier: 
+[[404  79 117]
+ [ 85 411 104]
+ [129 123 348]]
+   Recall: 0.646111
+   Precision: 0.645265
+   F1-score: 0.645688
+      Fold 3
+      Elapsed time: 38.115572929382324
+      Classifier: 
+[[387  96 117]
+ [ 83 408 109]
+ [135 105 360]]
+   Recall: 0.641667
+   Precision: 0.641318
+   F1-score: 0.641492
+      Fold 4
+      Elapsed time: 39.47415828704834
+      Classifier: 
+[[396 103 101]
+ [ 93 402 105]
+ [130 107 363]]
+   Recall: 0.645000
+   Precision: 0.644855
+   F1-score: 0.644928
+      Fold 5
+      Elapsed time: 39.96271228790283
+      Classifier: 
+[[385  98 117]
+ [ 80 413 107]
+ [115 106 379]]
+   Recall: 0.653889
+   Precision: 0.653895
+   F1-score: 0.653892
+      Fold 6
+      Elapsed time: 37.975738525390625
+      Classifier: 
+[[399  87 114]
+ [ 85 396 119]
+ [117 111 372]]
+   Recall: 0.648333
+   Precision: 0.648479
+   F1-score: 0.648406
+      Fold 7
+      Elapsed time: 36.5110502243042
+      Classifier: 
+[[392  95 113]
+ [107 391 102]
+ [116 125 359]]
+   Recall: 0.634444
+   Precision: 0.634256
+   F1-score: 0.634350
+      Fold 8
+      Elapsed time: 35.705546379089355
+      Classifier: 
+[[412  95  93]
+ [ 66 440  94]
+ [132 130 338]]
+   Recall: 0.661111
+   Precision: 0.660291
+   F1-score: 0.660701
+      Fold 9
+      Elapsed time: 36.179226875305176
+      Classifier: 
+[[402  88 110]
+ [ 71 430  99]
+ [115 132 353]]
+   Recall: 0.658333
+   Precision: 0.657775
+   F1-score: 0.658054
+      Fold 10
+      Elapsed time: 35.471927881240845
+      Classifier: 
+[[388 105 107]
+ [ 84 402 114]
+ [139 106 355]]
+   Recall: 0.636111
+   Precision: 0.635712
+   F1-score: 0.635911
+   Average classifier performance on validation set:
+Average Recall: 0.647667
+Average Prediction: 0.647277
+Average F1-score: 0.647472
+   Classifier performance on test data set:
+[[837 166 177]
+ [136 868 181]
+ [252 234 749]]
+   Recall: 0.682763
+   Precision: 0.681470
+   F1-score: 0.682116

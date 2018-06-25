@@ -1,0 +1,5 @@
+   Now, the amount of text samples for the author EAP is:  6000
+   Now, the amount of text samples for the author HPL is:  6000
+   Now, the amount of text samples for the author MWS is:  6000
+Currently leaving out: None
+Fold 1

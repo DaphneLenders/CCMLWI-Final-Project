@@ -1,0 +1,105 @@
+   Now, the amount of text samples for the author EAP is:  4800
+   Now, the amount of text samples for the author HPL is:  4800
+   Now, the amount of text samples for the author MWS is:  4800
+      Currently leaving out: None
+      Fold 1
+      Elapsed time: 2.276637315750122
+      Baseline: 
+[[478   1   1]
+ [456  23   1]
+ [473   3   4]]
+   Recall: 0.350694
+   Precision: 0.619416
+   F1-score: 0.447837
+      Fold 2
+      Elapsed time: 0.43828821182250977
+      Baseline: 
+[[480   0   0]
+ [450  29   1]
+ [468   4   8]]
+   Recall: 0.359028
+   Precision: 0.703675
+   F1-score: 0.475465
+      Fold 3
+      Elapsed time: 0.45215582847595215
+      Baseline: 
+[[479   0   1]
+ [456  21   3]
+ [475   1   4]]
+   Recall: 0.350000
+   Precision: 0.598087
+   F1-score: 0.441585
+      Fold 4
+      Elapsed time: 0.45036768913269043
+      Baseline: 
+[[478   0   2]
+ [456  22   2]
+ [461   3  16]]
+   Recall: 0.358333
+   Precision: 0.674217
+   F1-score: 0.467957
+      Fold 5
+      Elapsed time: 0.5723834037780762
+      Baseline: 
+[[477   1   2]
+ [448  29   3]
+ [472   3   5]]
+   Recall: 0.354861
+   Precision: 0.573411
+   F1-score: 0.438409
+      Fold 6
+      Elapsed time: 0.4414362907409668
+      Baseline: 
+[[479   1   0]
+ [456  23   1]
+ [471   3   6]]
+   Recall: 0.352778
+   Precision: 0.683226
+   F1-score: 0.465301
+      Fold 7
+      Elapsed time: 0.4190559387207031
+      Baseline: 
+[[475   0   5]
+ [460  17   3]
+ [477   0   3]]
+   Recall: 0.343750
+   Precision: 0.536377
+   F1-score: 0.418984
+      Fold 8
+      Elapsed time: 0.5207986831665039
+      Baseline: 
+[[480   0   0]
+ [456  23   1]
+ [466   5   9]]
+   Recall: 0.355556
+   Precision: 0.687932
+   F1-score: 0.468809
+      Fold 9
+      Elapsed time: 0.4558231830596924
+      Baseline: 
+[[479   1   0]
+ [460  18   2]
+ [470   3   7]]
+   Recall: 0.350000
+   Precision: 0.645306
+   F1-score: 0.453844
+      Fold 10
+      Elapsed time: 0.43201661109924316
+      Baseline: 
+[[479   1   0]
+ [465  14   1]
+ [467   1  12]]
+   Recall: 0.350694
+   Precision: 0.712517
+   F1-score: 0.470040
+   Average baseline performance on validation set:
+Average Recall: 0.352569
+Average Prediction: 0.643416
+Average F1-score: 0.454823
+   Baseline performance on test data set:
+[[   0    0 1180]
+ [   0    1 1184]
+ [   0    0 1235]]
+   Recall: 0.333615
+   Precision: 0.447717
+   F1-score: 0.382334
